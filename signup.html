@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+    <title>Sign-up Attendance Management System</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 >AttendEase</h1>
+        <a href="#">Home</a>
+    </div>
+   <div class="sign-up">
+        <form action="dbcreate.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required="true">
+
+            <label for="enrollmentId">Enrollment ID:</label>
+            <input type="text" id="enrollmentId" name="enrollmentId" required="true">
+
+            <label for="program">Program:</label>
+            <input type="text" id="program" name="program" required="true">
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required="true">
+
+            <label for="token">Token:</label>
+            <input type="text" id="token" name="token" placeholder="6-digit token value" required="true">
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+
+</html>

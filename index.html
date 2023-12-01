@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Attendance Management System</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 >AttendEase</h1>
+        <a href="#">Home</a>
+    </div>
+
+    <div class="send-attendance">
+        <form action="sendtodb.php" method="post">
+            <label for="token">Enter your token:</label>
+            <input type="text" id="token" placeholder="6-digit token value" name="token" required="true" pattern="\d{6}" oninput="validateToken()">
+            <input type="submit" value="Submit" id="submitBtn" disabled>
+        </form>
+    </div>
+</body>
+
+</html>
